@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+    <!-- <div id = "calculator">
+        <div id ="screen-container">
+            <div id="screen"></div>
+        </div>
+        <div id="buttons-container">
+            <div class="buttons">
+                <button class="operator" id="clear">AC</button>
+                <button class="operator" id="delete">DEL</button>
+                <button class="operator">/</button>
+                <button class="operator">*</button>
+                <button>7</button>
+                <button>8</button>
+                <button>9</button>
+                <button class="operator">-</button>
+                <button>4</button>
+                <button>5</button>
+                <button>6</button>
+                <button class="operator">+</button>
+                <button>1</button>
+                <button>2</button>
+                <button>3</button>
+                <button class="operator" id="equals">=</button>
+                <div class="l-row">
+                    <button id="zero">0</button>
+                    <button id="zero">00</button>
+                </div>
+
+
+            </div>
+        </div>
+    </div> -->
+    <!-- <div class="container">
+        <div class="displayContainer">
+          <div id="prev">&nbsp;</div>
+          <div id="display">
+            0
+          </div>
+        </div>
+        <div class="l-col">
+          <button id="backspace"></button>
+          <button id="clearLine">C</button>
+          <button id="clear">CE</button>
+          <button id="divide" data-operation="divide">/</button>
+          <button id="seven" class="digit">7</button>
+          <button id="eight" class="digit">8</button>
+          <button id="nine" class="digit">9</button>
+          <button id="multiply" data-operation="multiply">*</button>
+          <button id="four" class="digit">4</button>
+          <button id="five" class="digit">5</button>
+          <button id="six" class="digit">6</button>
+          <button id="subtract" data-operation="subtract">-</button>
+          <button id="one" class="digit">1</button>
+          <button id="two" class="digit">2</button>
+          <button id="three" class="digit">3</button>  
+          <button id="add" data-operation="add">+</button>
+          <div></div>
+          <button id="zero" class="digit">0</button>
+          <button id="decimal" class="digit">.</button>
+          <button id="equals">=</button>
+        </div>
+      </div> -->
+      <table id="calcu">
+        
+        <tr>
+            <td colspan="3"><input type="text" id="result"></td>
+            <td><input type="button" value="c" onclick="clr()" /> </td>
+        </tr>
+        <tr>
+            <td><input type="button" value="1" onclick="dis('1')"
+                        onkeydown="myFunction(event)"> </td>
+            <td><input type="button" value="2" onclick="dis('2')"
+                        onkeydown="myFunction(event)"> </td>
+            <td><input type="button" value="3" onclick="dis('3')"
+                        onkeydown="myFunction(event)"> </td>
+            <td><input type="button" value="/" onclick="dis('/')"
+                        onkeydown="myFunction(event)"> </td>
+        </tr>
+        <tr>
+            <td><input type="button" value="4" onclick="dis('4')"
+                        onkeydown="myFunction(event)"> </td>
+            <td><input type="button" value="5" onclick="dis('5')"
+                        onkeydown="myFunction(event)"> </td>
+            <td><input type="button" value="6" onclick="dis('6')"
+                        onkeydown="myFunction(event)"> </td>
+            <td><input type="button" value="*" onclick="dis('*')"
+                        onkeydown="myFunction(event)"> </td>
+        </tr>
+        <tr>
+            <td><input type="button" value="7" onclick="dis('7')"
+                        onkeydown="myFunction(event)"> </td>
+            <td><input type="button" value="8" onclick="dis('8')"
+                        onkeydown="myFunction(event)"> </td>
+            <td><input type="button" value="9" onclick="dis('9')"
+                        onkeydown="myFunction(event)"> </td>
+            <td><input type="button" value="-" onclick="dis('-')"
+                        onkeydown="myFunction(event)"> </td>
+        </tr>
+        <tr>
+            <td><input type="button" value="0" onclick="dis('0')"
+                        onkeydown="myFunction(event)"> </td>
+            <td><input type="button" value="." onclick="dis('.')"
+                        onkeydown="myFunction(event)"> </td>
+            
+            <!-- solve function call function solve to evaluate value -->
+            <td><input type="button" value="=" onclick="solve()"> </td>
+  
+            <td><input type="button" value="+" onclick="dis('+')"
+                        onkeydown="myFunction(event)"> </td>
+        </tr>
+    </table>
+       <script src="script.js"></script>
+       <script src="https://app.zenclass.in/sheets/v1/js/zen/suite/bundle.js"></script>
+</body>
+</html>
